@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    --header-height: max(75px, 10vh);
+
+    color: white;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(0, 0, 0, 1);
+    height:var(--header-height);
+}
+
+
+.options{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 30px;
+    margin-right: min(100px, 20vw);
+}
+
+.option{
+    color: black;
+}
+
+#content{
+    background-image: url(/src/images/cuttingboard-background.avif);
+    background-size: cover;
+    height: calc(100vh - var(--header-height))
+}
+
+button {
+    height: 20px;
+    width: 50px;
+}
